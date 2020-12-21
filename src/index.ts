@@ -67,6 +67,6 @@ export const transformFile = (
 export const transformFiles = (rules: Rule[] | Rule) => (
   globPattern: string
 ): Promise<void> =>
-  glob(globPattern)
+  glob(globPattern, { onlyFiles: true })
     .then((paths) => Promise.all(paths.map(transformFile(rules))))
     .then(() => Promise.resolve());
