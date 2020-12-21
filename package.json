@@ -7,7 +7,7 @@
     "url": "https://github.com/fal-works/mere-file-transformer/issues"
   },
   "dependencies": {
-    "glob": "^7.1.6"
+    "fast-glob": "^3.2.4"
   },
   "devDependencies": {
     "@types/glob": "^7.1.3",

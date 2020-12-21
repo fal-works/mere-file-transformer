@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import * as stream from "stream";
 
-import { promiseGlob } from "./glob";
+import * as glob from "fast-glob";
 import { chainStreams } from "./streams";
 
 /** Any void function that returns `stream.Transform`. */
@@ -67,6 +67,6 @@ export const transformFile = (
 export const transformFiles = (rules: Rule[]) => (
   globPattern: string
 ): Promise<void> =>
-  promiseGlob(globPattern)
+  glob(globPattern)
     .then((paths) => Promise.all(paths.map(transformFile(rules))))
     .then(() => Promise.resolve());
