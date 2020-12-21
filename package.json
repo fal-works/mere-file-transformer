@@ -1,0 +1,49 @@
+{
+  "name": "@fal-works/mere-file-transformer",
+  "description": "Tiny library for transforming multiple files.",
+  "version": "0.1.0",
+  "author": "FAL",
+  "bugs": {
+    "url": "https://github.com/fal-works/mere-file-transformer/issues"
+  },
+  "dependencies": {
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/node": "^14.14.14",
+    "@types/replacestream": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1",
+    "replacestream": "^4.0.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.3"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "types"
+  ],
+  "homepage": "https://github.com/fal-works/mere-file-transformer#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "private": false,
+  "repository": "https://github.com/fal-works/mere-file-transformer",
+  "scripts": {
+    "build": "yarn clean && tsc && yarn format",
+    "clean": "rimraf lib/* & rimraf types/*",
+    "format": "yarn format:lib & yarn format:types",
+    "format:lib": "eslint --fix lib/**/*.js",
+    "format:types": "eslint --fix types/**/*.d.ts",
+    "test": "node test/test.js",
+    "test-reverse": "node test/test-reverse.js"
+  },
+  "types": "types/index.d.ts"
+}
