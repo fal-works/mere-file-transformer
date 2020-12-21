@@ -14,16 +14,5 @@
   },
   "include": [
     "./src/**/*.ts"
-  ],
-  "typedocOptions": {
-    "out": "docs",
-    "entryPoints": [
-      "./src/index.ts"
-    ],
-    "excludeExternals": true,
-    "excludeNotExported": true,
-    "excludePrivate": true,
-    "theme": "minimal",
-    "readme": "README.md",
-  }
+  ]
 }
