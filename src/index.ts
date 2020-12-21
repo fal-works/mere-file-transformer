@@ -64,7 +64,7 @@ export const transformFile = (
 };
 
 /** @param rules Any function(s) that return `stream.Transform`. */
-export const transformFiles = (rules: Rule[]) => (
+export const transformFiles = (rules: Rule[] | Rule) => (
   globPattern: string
 ): Promise<void> =>
   glob(globPattern)
