@@ -1,7 +1,7 @@
 {
   "name": "@fal-works/mere-file-transformer",
   "description": "Tiny library for transforming multiple files.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "FAL",
   "bugs": {
     "url": "https://github.com/fal-works/mere-file-transformer/issues"
