@@ -9,7 +9,7 @@ Tiny library for transforming multiple files asynchronously.
 
 ## API
 
-```js
+```ts
 const transformFile: (rules: Rule[] | Rule) => (path: string) => Promise<void>;
 const transformFiles: (rules: Rule[] | Rule) => (globPattern: string) => Promise<void>;
 ```
